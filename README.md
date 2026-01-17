@@ -11,9 +11,9 @@ curl -fsSL https://raw.githubusercontent.com/aaddrick/hytale-install-script/main
 ## What it does
 
 - Checks that flatpak is installed
-- Configures the flathub remote if needed
+- Configures the flathub remote if needed (required for runtime dependencies)
 - Downloads the latest Hytale Launcher flatpak
-- Installs the launcher with required dependencies
+- Automatically installs the GNOME Platform runtime and other dependencies from flathub
 
 ## Requirements
 

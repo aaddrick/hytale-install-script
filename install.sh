@@ -46,8 +46,8 @@ fi
 echo "[OK] Download complete"
 
 echo
-echo "Installing Hytale Launcher..."
-flatpak install --user -y "$FLATPAK_FILE"
+echo "Installing Hytale Launcher (including GNOME Platform runtime if needed)..."
+flatpak install --user -y --noninteractive "$FLATPAK_FILE"
 
 echo
 echo "Cleaning up..."
