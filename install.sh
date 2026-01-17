@@ -46,6 +46,12 @@ fi
 echo "[OK] Download complete"
 
 echo
+# Check if already installed
+if flatpak info com.hypixel.HytaleLauncher &> /dev/null; then
+    echo "Hytale Launcher is already installed, reinstalling to update..."
+    flatpak uninstall --user -y --noninteractive com.hypixel.HytaleLauncher
+fi
+
 echo "Installing Hytale Launcher (including GNOME Platform runtime if needed)..."
 flatpak install --user -y --noninteractive "$FLATPAK_FILE"
 
