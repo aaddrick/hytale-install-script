@@ -19,6 +19,7 @@ curl -fsSL https://raw.githubusercontent.com/aaddrick/hytale-install-script/main
 
 - Linux with flatpak installed
 - curl or wget
+- ~500MB free disk space (for launcher + GNOME runtime)
 
 ## Running the Launcher
 
@@ -29,3 +30,7 @@ flatpak run com.hypixel.HytaleLauncher
 ```
 
 Or find "Hytale Launcher" in your application menu.
+
+## Updating
+
+Run the install command again to update to the latest version.
